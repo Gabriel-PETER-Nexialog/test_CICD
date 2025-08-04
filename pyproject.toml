@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+fix = true
+show-fixes = true
+extend-ignore = ["E501"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N"]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+skip-magic-trailing-comma = false # Add "," in last element of list
